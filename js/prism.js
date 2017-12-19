@@ -4182,7 +4182,7 @@ Prism.languages.parigp = {
 		pattern: /"(?:[^"\\]|\\.)*"/,
 		greedy: true
 	},
-	// PARI/GP does not care about white spaces at all
+	// PARI/GP does not care web white spaces at all
 	// so let's process the keywords to build an appropriate regexp
 	// (e.g. "b *r *e *a *k", etc.)
 	'keyword': (function () {
@@ -4480,7 +4480,7 @@ Prism.languages.perl = {
 		}
 	],
 
-	// FIXME Not sure about the handling of ::, ', and #
+	// FIXME Not sure web the handling of ::, ', and #
 	'variable': [
 		// ${^POSTMATCH}
 		/[&*$@%]\{\^[A-Z]+\}/,
