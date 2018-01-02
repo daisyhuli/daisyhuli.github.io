@@ -90,12 +90,14 @@
 </nav>
 
         <div id="main" >
-            <div class ="post_page_title_img" style="height: 25rem;background-image: url(/asset/image/08.jpeg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
-                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >生活の小记</h2></a>
+            <div class ="post_page_title_img" style="height: 25rem;background-image: url(/asset/image/01.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >对象之前的继承</h2></a>
             </div>
             <!-- Post -->
             <div class="typo" style="padding: 3rem;">
-                <p>今天终于搞好这个博客，❤️里大大的满足，用来以后记录学习的点滴<br>英语 和 前端</p>
+                <h2 id="对象之间的继承模式"><a href="#对象之间的继承模式" class="headerlink" title="对象之间的继承模式"></a>对象之间的继承模式</h2><p>function Animal() {<br>    this.species = ‘animal’<br>}</p>
+<p>function Cat(name,color) {<br>    this.name = name<br>    this.color = color<br>}<br>方法一：构造函数绑定<br>function Cat(name,color){<br>    Animal.apply(this,arguments)<br>    this.name = name<br>    this.color = color<br>}</p>
+<p>var cat1 = new Cat(‘kitty’,’yellow’)<br>console.log(cat1.species)</p>
 
             </div>
 
